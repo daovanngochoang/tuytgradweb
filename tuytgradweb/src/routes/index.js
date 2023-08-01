@@ -2,7 +2,7 @@
 import React from 'react';
 import { Route, Routes } from "react-router-dom";
 import Header from "../components/Header";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 import Home from "../pages/Home";
 import Contact from "../pages/Contribute";
 import Contribute from "../pages/Contribute";
@@ -28,7 +28,7 @@ const Routers = () => {
           <Route path="/services/" element={<Services />} />
         </Routes>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
