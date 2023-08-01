@@ -1,0 +1,16 @@
+/* components/Header.css */
+.navbar {
+  display: flex;
+  background-color: white;
+}
+.navbar-menu {
+  line-height: 64px;
+  width: 100%;
+
+  justify-content: space-around;
+}
+
+img {
+  width: 30%;
+  height: 30%;
+}
