@@ -61,6 +61,7 @@
 .contact-phone-number{
     margin-top: 0;
     margin-bottom: 15px;
+    color: #f89e48;
 }
 
 .divider-contact{
@@ -118,9 +119,22 @@
     
 }
 
+.footer-icon-list-container{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+}
+
+.footer-icon-list {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
 .footer-list-content{
     max-width: 60%;
     min-width: 1200px;
+    display: flex;
 }
 
 .footer-list-content p {
@@ -128,58 +142,31 @@
     color: #f89e48;
 }
 
+
 /* Custom styles for the footer links */
+
 .footer-list-content ul {
     list-style-type: circle;
-    display: flex;
-    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     justify-content: space-between;
 }
 
 .footer-list-content li {
-    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    list-style-type: circle;    
 }
 
 .footer-list-content a {
-    color: #fff; /* Footer link color */
+    color: #fff;
     text-decoration: none;
     margin: 5px;
+    padding-left: 30px;
 }
 
 
-.icon3 {
-    background-image: url('/src/assets/icon/footer-icons/icon3.png');
-    background-size: contain; /* Adjust the size of the icon */
-    background-repeat: no-repeat;
-    padding-left: 25px; /* Add some padding on the left side to make room for the icon */
-    line-height: 1.5; 
-}
-.icon1 {
-    background-image: url('/src/assets/icon/footer-icons/icon1.png');
-    background-size: contain; /* Adjust the size of the icon */
-    background-repeat: no-repeat;
-    padding-left: 25px; /* Add some padding on the left side to make room for the icon */
-    line-height: 1.5; 
-}
-.icon2 {
-    background-image: url('/src/assets/icon/footer-icons/icon2.png');
-    background-size: contain; /* Adjust the size of the icon */
-    background-repeat: no-repeat;
-    padding-left: 25px; /* Add some padding on the left side to make room for the icon */
-    line-height: 1.5; 
-}
-.icon4 {
-    background-image: url('/src/assets/icon/footer-icons/icon4.png');
-    background-size: contain; /* Adjust the size of the icon */
-    background-repeat: no-repeat;
-    padding-left: 25px; /* Add some padding on the left side to make room for the icon */
-    line-height: 1.5; 
-}
 
 
 .addresss{
@@ -197,7 +184,6 @@
     list-style-type: none;
     flex-direction: column;
     align-items: flex-start;
-
 }
 
 
@@ -205,3 +191,65 @@
     padding: 0;
     margin: 0;
 }
+
+
+
+.cmp-logo {
+    height: 70px;
+    width: 60px;
+
+}
+
+.addresss{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:#1a3661;
+    height: 200px;
+}
+
+
+.address-containter{
+    margin-top: 10px;
+    display: flex;
+    max-width: 60%;
+    min-width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.company-info{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.company-info p{
+    font-size: small;
+    margin-top: 5px;
+    color: white;
+}
+
+.infomation p {
+    font-size: small;
+    color: white;   
+}
+
+.thongbao {
+    height: 100px;
+    width: 250px;
+}
+
+.social-media {
+    width: 300px;
+}
+
+.social-media-icon {
+    margin: 20px 10px 10px 10px;
+    height: 40px;
+    width: 40px;
+}
+
+
