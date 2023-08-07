@@ -1,0 +1,8 @@
+.wrapper-popoer{
+  display: flex;
+}
+
+.wrapper-popoer li {
+    list-style-type:none;
+    margin-left: 3rem;
+}

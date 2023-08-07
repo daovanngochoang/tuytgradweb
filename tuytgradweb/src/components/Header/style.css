@@ -1,0 +1,54 @@
+.header {
+  position: fixed;
+  background: rgba(210, 192, 154, .94);
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-top-left {
+  position: absolute;
+}
+
+.header-top-right {
+  position: absolute;
+  right: 0;
+}
+
+.navbar {
+  display: flex;
+  background: rgba(210, 192, 154, .94);
+
+
+}
+
+.navbar-menu {
+  line-height: 64px;
+  width: 100%;
+  justify-content: space-around;
+  font-size: 17px;
+  font-weight: bolder;
+  color: #05527e;
+  background: rgba(210, 192, 154, .94);
+}
+
+.header-logo {
+  margin-top: 3rem;
+  background: url('http://atvin.com.vn/wp-content/themes/atvin/assets/css/../images/at_header_bg.jpg');
+}
+
+.header-logo img {
+  width: 23%;
+  height: 23%;
+}
+
+.custom-popover {
+  width: 100%;
+}
+
+
+.navbar-menu-item:hover{
+  color: #fefcaa;
+}

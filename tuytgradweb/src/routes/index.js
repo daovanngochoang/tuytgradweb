@@ -12,6 +12,8 @@ import News from "../pages/News";
 import Product from "../pages/Product";
 import Services from "../pages/Services";
 
+import "./style.css"
+
 const Routers = () => {
   return (
     <div className='route-wrapper'>

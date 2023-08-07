@@ -1,13 +1,4 @@
-// components/Header.js
-import React from "react";
-import { Menu, Popover, Layout } from "antd";
-import { Link } from "react-router-dom";
-import "../StyleComponent/Header.css";
-import logo from "../assets/logo/Logo_ATVIN_01-2.png";
-const { Header: AntHeader } = Layout;
-
-const Header = () => {
-  const menuItems = [
+export const menuItems =  [
     {
       key: "1",
       path: "/",
@@ -105,36 +96,3 @@ const Header = () => {
       ),
     },
   ];
-
-  return (
-    <div>
-      <Menu mode="horizontal">
-        <Menu.Item>Tư vấn sản phẩm</Menu.Item>
-        <Menu.Item>098 115 9898</Menu.Item>
-        <Menu.Item>contact@atvin.com.vn</Menu.Item>
-      </Menu>
-      <div className="header-logo">
-        <img src={logo} alt="logo" />
-      </div>
-      <div>
-        <AntHeader className="navbar">
-          <Menu mode="horizontal" className="navbar-menu">
-            {menuItems.map((item) => (
-              <Menu.Item key={item.key}>
-                <Popover
-                  content={item.wrapperContent}
-                  trigger="hover"
-                  placement="bottom"
-                >
-                  <Link to={item.path}>{item.label}</Link>
-                </Popover>
-              </Menu.Item>
-            ))}
-          </Menu>
-        </AntHeader>
-      </div>
-    </div>
-  );
-};
-
-export default Header;
