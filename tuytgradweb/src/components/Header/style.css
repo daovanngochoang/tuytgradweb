@@ -1,11 +1,13 @@
 .header {
   position: fixed;
   background: rgba(210, 192, 154, .94);
+  z-index: 9999;
 }
 
 .header-top {
   display: flex;
   justify-content: space-between;
+  
 }
 
 .header-top-left {
@@ -48,7 +50,3 @@
   width: 100%;
 }
 
-
-.navbar-menu-item:hover{
-  color: #fefcaa;
-}
