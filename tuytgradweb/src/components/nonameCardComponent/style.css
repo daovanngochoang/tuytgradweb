@@ -1,0 +1,33 @@
+.nonname-card-item{
+    padding: 5px;
+    background-color: bisque;
+    width: 400px;
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #05537f;
+}
+
+
+.nonname-card-title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.nonname-card-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.nonname-card-title h3 {
+    margin: 0px;
+    margin-bottom: 10px;
+    color: white;
+}
+.nonname-card-title p {
+    margin: 0px;
+    color: white;
+
+}

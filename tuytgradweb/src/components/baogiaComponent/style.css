@@ -1,0 +1,49 @@
+.baogia-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: center;
+}
+
+.baogia-request-input {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    background-color: #faffbd;
+    border-width: 1px;
+
+}
+.submit-button{
+    height: 50px;
+    width: 150px;
+    background-color: #f89e48;
+    border-width: 0px;
+    margin-bottom: 20px;
+}
+.title{
+    color: #1a3661;
+}
+
+.baogia-input-field {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: #faffbd;
+    border-width: 1px;
+}
+
+.logo-thoi-khang-hy {
+    height: 50px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+/* .baogia-request-input {} */
+.baogia {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #e0c899; 
+
+}
