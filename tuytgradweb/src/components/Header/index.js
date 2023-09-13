@@ -1,5 +1,5 @@
 // components/Header.js
-import React from "react";
+import React ,{ useState, useEffect }  from "react";
 import { Menu, Popover, Layout } from "antd";
 import { Link } from "react-router-dom";
 import "./style.css";
@@ -12,10 +12,25 @@ const { Header: AntHeader } = Layout;
 
 const Header = () => {
 
-  
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  const handleScroll = () => {
+    const currentScrollPos = window.pageYOffset;
+    setVisible(prevScrollPos > currentScrollPos);
+    setPrevScrollPos(currentScrollPos);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos, visible]);
+
   return (
     <div className="header">
-      <Menu mode="horizontal" className="header-top">
+      <Menu mode="horizontal" className={`header-top ${visible ? "" : "hidden"}`}>
         <div className="header-top-left">
           <Menu.Item>Tư vấn sản phẩm</Menu.Item>
           <Menu.Item>098 115 9898</Menu.Item>
@@ -35,7 +50,7 @@ const Header = () => {
       </Menu>
          
 
-        <div className="header-logo">
+        <div  className={`header-logo ${visible ? "" : "hidden"}`}>
           <img src={logo} alt="logo" />
         </div> 
   

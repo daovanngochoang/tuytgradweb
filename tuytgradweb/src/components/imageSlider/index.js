@@ -13,18 +13,28 @@ import "./style.css"
 const slideImages = [
     {
       url: Slider1,
+      subtitle: "Là Hãng Thang Máy",
+      title: "Đáng Tin cậy nhất"
     },
     {
       url: Slider2,
+      subtitle: "Giải pháp thiết kế thang máy cho gia đình",
+      title: "E-HOME"
     },
     {
         url: Slider3,
+        subtitle: "Giải pháp thiết kế thang máy cho Khách sạn",
+        title: "E-HOTEL"
       },
       {
         url: Slider4,
+        subtitle: "Giải pháp thiết kế thang máy cho nhà cải tạo",
+        title: "E-IMPRO"
       },
       {
         url: Slider5,
+        subtitle: "Giải pháp thiết kế thang máy cho Văn phòng",
+        title: "E-OFFICE"
       },
   ];
   const buttonStyle = {
@@ -49,6 +59,12 @@ const ImageSlider = () => {
               style={{ backgroundImage: `url(${slideImage.url})` }}
               className="slide-div"
             >
+              <p className='slide-title'>
+                <span className='slide-title-span-title'>{slideImage.title}</span>
+                <span  className='slide-title-span-subtitle'>
+                  {slideImage.subtitle}
+                </span>
+              </p>
             </div>
           </div>
         ))}

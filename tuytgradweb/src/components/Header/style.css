@@ -4,10 +4,14 @@
   z-index: 9999;
 }
 
+
 .header-top {
   display: flex;
   justify-content: space-between;
   
+}
+.header-top.hidden {
+  display: none;
 }
 
 .header-top-left {
@@ -22,6 +26,7 @@
 .navbar {
   display: flex;
   background: rgba(210, 192, 154, .94);
+  width: 1300px;
 
 
 }
@@ -40,10 +45,12 @@
   margin-top: 3rem;
   background: url('http://atvin.com.vn/wp-content/themes/atvin/assets/css/../images/at_header_bg.jpg');
 }
-
+.header-logo.hidden{
+  display: none;
+}
 .header-logo img {
   width: 23%;
-  height: 23%;
+  height: 18%;
 }
 
 .custom-popover {

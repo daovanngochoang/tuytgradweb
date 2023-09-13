@@ -1,22 +1,47 @@
-import React from 'react'
-import ProductCard from '../components/productCard'
-import dongCoThangMay from '../assets/productImages/DongCoThangMay/linh-kien-san-pham_dong_co-thang-may-680x510.jpg'
-import BaogiaComponent from '../components/baogiaComponent'
-import NoNameCard from '../components/nonameCardComponent'
-import ImageSlider from '../components/imageSlider'
-import icon from '../assets/icon_bigz1.png'
-
+import React, { useState } from "react";
+import ProductCard from "../components/productCard";
+import ImageSlider from "../components/imageSlider";
+import ProductData from "../FakeData/ProductData";
+import "../PageStyle/Home.css";
+import iconmain from "../assets/icon/icon-main.png";
+import PostData from "../FakeData/PostData";
+import SliderBottom from "../components/SliderBottom";
 
 const Home = () => {
+  const [products, SetProduct] = useState(ProductData);
+  const [posts, SetPost] = useState(PostData);
+  console.log(products);
   return (
-    <div>
-      <ImageSlider/>
-      <ProductCard title='Động cơ thang máy' image={dongCoThangMay} />
-      <BaogiaComponent />
-      <NoNameCard icon={icon} title={"CHI NHÁNH ALPHATECH"} subtitle={"Liên hệ với các chi nhánh của chúng tôi"} />
-
+    <div className="home">
+      <ImageSlider />
+      <div className="home-title">
+        <span>Thiết bị thang máy</span>
+        <img src={iconmain} alt="mainicon" className="home-title-icon" />
+      </div>
+      <div className="home-product">
+        {products.map((product) => (
+          <ProductCard title={product.title} cover_image={product.coverImage} />
+        ))}
+      </div>
+      <div className="home-title">
+        <span>Lợi ích đầu tư</span>
+        <img src={iconmain} alt="mainicon" className="home-title-icon" />
+      </div>
+      <div className="home-post">
+        {
+          posts.map((post) => (
+            <ProductCard title={post.title} cover_image={post.coverImage} width= "350px" height="350px"/>
+          ))
+        }
+      </div>
+      <div className="home-title">
+        <span>Trải nghiệm sự khác biệt</span>
+        <p>Cùng thang máy ATVIN</p>
+        <img src={iconmain} alt="mainicon" className="home-title-icon" />
+      </div>
+      <SliderBottom/>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

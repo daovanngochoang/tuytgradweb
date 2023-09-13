@@ -1,0 +1,36 @@
+.home-product{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 0.7rem;
+    margin-top: 2rem;
+
+}
+.home-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+    .home-title-icon{
+        width: 20%;
+        height: 20%;
+    }
+    .home-title span{
+        font-size: 30px;
+        color: #05527e;
+        font-weight: bolder;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+
+    }
+    .home-title p{
+        font-size: 20px;
+        color: #05527e;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+.home-post{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 3rem;
+}

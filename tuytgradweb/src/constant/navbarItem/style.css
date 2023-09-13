@@ -1,5 +1,6 @@
 .wrapper-popoer{
   display: flex;
+  margin-top: 1rem;
 }
 
 .wrapper-popoer li {
