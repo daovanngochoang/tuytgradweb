@@ -56,7 +56,7 @@ const Footer = () => {
               </div>
               <div className='input-and-button'>
                 <input className='input-field' type="text" id="inputField" name="name" placeholder="Số điện thoại ..." />
-                <button class="send-button" type="submit">Gửi đi</button>
+                <button class="send-button" >Gửi đi</button>
               </div>
             </div>
           </div>

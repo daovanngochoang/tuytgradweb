@@ -6,4 +6,6 @@
 .wrapper-popoer li {
     list-style-type:none;
     margin-left: 3rem;
+    color: #05527e;
+    font-weight: 700;
 }

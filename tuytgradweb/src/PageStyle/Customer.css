@@ -1,0 +1,7 @@
+.customer-title{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    color: #05527e;
+}

@@ -1,10 +1,10 @@
-// routes.js
+
 import React from 'react';
 import { Route, Routes } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Home from "../pages/Home";
-import Contact from "../pages/Contribute";
+import Contact from "../pages/Contact";
 import Contribute from "../pages/Contribute";
 import Customer from "../pages/Customer";
 import Branch from "../pages/introducBranch";
@@ -21,7 +21,7 @@ const Routers = () => {
       <div className='router-wrapper-body'>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/contact/" element={<Contact />} />
+          <Route path="/contact/" element={<Contact/>} />
           <Route path="/contribute/" element={<Contribute />} />
           <Route path="/customer/" element={<Customer />} />
           <Route path="/branch/" element={<Branch />} />

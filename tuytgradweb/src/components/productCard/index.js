@@ -1,7 +1,5 @@
 import React from 'react';
 import "./style.css";
-import { Link } from "react-router-dom";
-import icon from "../../assets/icon/icon-right.png";
 
 const ProductCard = ({ title, cover_image, width, height }) => {
   const cardStyle = {

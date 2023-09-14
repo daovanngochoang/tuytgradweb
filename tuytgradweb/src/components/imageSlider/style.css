@@ -1,5 +1,7 @@
 .images-slider-wrapper{
     width: 100%;
+    text-align: center;
+
 
 }
 .slide-div{  
@@ -20,11 +22,13 @@
         color: rgb(255,142,35);
         font-size: 45px;
         font-weight: bold;
+   
     }
     .slide-title-span-subtitle{
         color: white;
         font-size: 20;
         font-weight: bolder;
         margin-top: 1rem;
+       
        
     }

@@ -13,8 +13,8 @@ import "./style.css"
 const slideImages = [
     {
       url: Slider1,
-      subtitle: "Là Hãng Thang Máy",
-      title: "Đáng Tin cậy nhất"
+      subtitle: "Đáng Tin cậy nhất",
+      title: "Là Hãng Thang Máy"
     },
     {
       url: Slider2,

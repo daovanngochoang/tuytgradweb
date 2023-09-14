@@ -4,13 +4,7 @@ const menuItems = [
       key: "1",
       path: "/",
       label: "Trang chủ",
-      wrapperContent: (
-        <ul className="wrapper-popoer">
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-        </ul>
-      ),
+     
     },
     {
       key: "2",
@@ -18,9 +12,10 @@ const menuItems = [
       label: "Alpahtech Việt Nam",
       wrapperContent: (
         <ul  className="wrapper-popoer">
-          <li>Alpha Tech Item 1</li>
-          <li>Alpha Tech Item 2</li>
-          <li>Alpha Tech Item 3</li>
+          <li>GIỚI THIỆU</li>
+          <li>NỀN TẢN CỐT LỎI</li>
+          <li>CHIẾN LƯỢC</li>
+          <li>TIÊU CHUẨN NGƯỜI DÙNG</li>
         </ul>
       ),
     },
@@ -30,9 +25,12 @@ const menuItems = [
       label: "Sản Phẩm",
       wrapperContent: (
         <ul  className="wrapper-popoer">
-          <li>Alpha Tech Item 1</li>
-          <li>Alpha Tech Item 2</li>
-          <li>Alpha Tech Item 3</li>
+          <li>Thang máy Atvin</li>
+          <li>Thang máy Gia Đình</li>
+          <li>Thang máy Tashi</li>
+          <li>Thang máy Lồng Kính</li>
+          <li>Thang cuốn</li>
+          <li>Thang máy tải hàng</li>
         </ul>
       ),
     },
@@ -42,9 +40,12 @@ const menuItems = [
       label: "Dịch Vụ",
       wrapperContent: (
         <ul  className="wrapper-popoer">
-          <li>Alpha Tech Item 1</li>
-          <li>Alpha Tech Item 2</li>
-          <li>Alpha Tech Item 3</li>
+          <li>Lắp đặt-vận hành thang máy</li>
+          <li>Bảo trì bảo dưỡng thang máy</li>
+          <li>Bảo hành thang máy</li>
+          <li>Sửa chữa thang máy</li>
+          <li>Chăm sóc khách hàng</li>
+          <li>Linh kiện thiết bị</li>
         </ul>
       ),
     },
@@ -54,9 +55,9 @@ const menuItems = [
       label: "Khách Hàng",
       wrapperContent: (
         <ul  className="wrapper-popoer">
-          <li>Alpha Tech Item 1</li>
-          <li>Alpha Tech Item 2</li>
-          <li>Alpha Tech Item 3</li>
+          <li>KHÁCH HÀNH DOANH NGHIỆP</li>
+          <li>KHÁCH HÀNG CHÍNH PHỦ</li>
+          <li>KHÁCH HÀNG CÁ NHÂN</li>
         </ul>
       ),
     },
@@ -66,9 +67,10 @@ const menuItems = [
       label: "Tin Tức",
       wrapperContent: (
         <ul  className="wrapper-popoer">
-          <li>Alpha Tech Item 1</li>
-          <li>Alpha Tech Item 2</li>
-          <li>Alpha Tech Item 3</li>
+          <li>TIN TỨC TỪ ATVIN</li>
+          <li>TIN NGÀNH THANG MÁY</li>
+          <li>TUYỂN DỤNG</li>
+          <li>TIN BẤT ĐỘNG SẢN</li>
         </ul>
       ),
     },
@@ -76,25 +78,13 @@ const menuItems = [
       key: "7",
       path: "/contribute",
       label: "Đóng góp xã hội",
-      wrapperContent: (
-        <ul  className="wrapper-popoer">
-          <li>Alpha Tech Item 1</li>
-          <li>Alpha Tech Item 2</li>
-          <li>Alpha Tech Item 3</li>
-        </ul>
-      ),
+    
     },
     {
       key: "8",
       path: "/contact",
       label: "Liên Hệ",
-      wrapperContent: (
-        <ul  className="wrapper-popoer">
-          <li>Alpha Tech Item 1</li>
-          <li>Alpha Tech Item 2</li>
-          <li>Alpha Tech Item 3</li>
-        </ul>
-      ),
+     
     },
   ];
 export default menuItems;

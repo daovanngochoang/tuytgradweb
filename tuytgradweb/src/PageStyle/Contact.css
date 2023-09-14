@@ -1,0 +1,27 @@
+.contact-wrapper{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   background-color: #e9d7b3;
+   padding-top: 5rem;
+   padding-bottom: 4rem;
+   
+ 
+}
+.contact-left {
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.contact-right{
+   /* display: flex;
+   flex-direction: column;
+   justify-content: center; */
+}
+
+.contact-right ul{
+    /* display: flex; */
+    justify-items: flex-start ;
+    align-items: flex-start;
+    padding-top: 1rem;
+}
